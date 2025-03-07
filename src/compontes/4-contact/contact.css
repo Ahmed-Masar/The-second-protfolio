@@ -13,6 +13,11 @@ section.contact-us .sub-title {
   line-height: 1.6rem;
   margin-bottom: 2rem;
 }
+section.contact-us form {
+  display: flex;
+  flex-direction: column;
+}
+
 section.contact-us label {
   color: var(--subtitle);
 }
@@ -64,6 +69,8 @@ section.contact-us .submit {
   transition: 0.3s;
   margin-top: 1.8rem;
   border: 1px solid rgb(63, 63, 70);
+  width: 30%;
+  align-self: center;
 }
 section.contact-us .submit:hover {
   scale: 0.97;
@@ -96,8 +103,6 @@ section.contact-us div.flex {
     display: none;
   }
   section.contact-us form {
-    display: flex;
-    flex-direction: column;
     width: 85%;
   }
   section.contact-us form div.flex {
@@ -110,9 +115,5 @@ section.contact-us div.flex {
     margin-left: 0;
     padding: 0.7rem 0;
     margin-top: 1rem;
-  }
-  section.contact-us .submit {
-    width: 30%;
-    align-self: center;
   }
 }

@@ -35,9 +35,23 @@ const Hero = () => {
 
         <div className="all-icons flex">
           {/* <div className="icon-twitter"></div> */}
-          <div className="icon icon-instagram"></div>
-          <div className="icon icon-github"></div>
-          <div className="icon icon-linkedin-square"></div>
+          <a
+            className="icon icon-instagram"
+            href="https://www.instagram.com/4pz3/"
+            target="_blank"
+          ></a>
+          <a
+            className="icon icon-github"
+            href="https://github.com/Ahmed-Masar"
+            target="_blank"
+          >
+            {" "}
+          </a>
+          <a
+            className="icon icon-linkedin-square"
+            href="https://www.linkedin.com/in/ahmed-masar-882502351/"
+            target="_blank"
+          ></a>
         </div>
       </div>
       <div className="right-ssection animation">
