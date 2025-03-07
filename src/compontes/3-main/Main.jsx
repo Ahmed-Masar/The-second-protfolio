@@ -94,10 +94,14 @@ const Main = () => {
                   <h1 className="title">{item.projectTitle}</h1>
                   <p className="sub-title">{item.projectBody}</p>
                   <div className="flex icons">
-                    <div className="flex" style={{ gap: "11px" }}>
-                      <div className="icon-link" />
-                      <div className="icon-github" />
-                    </div>
+                    {/* <div className=""> */}
+                    {/* <div className="icon-link" /> */}
+                    <a
+                      className="icon-github"
+                      target="_blank"
+                      href={item.githubURL}
+                    />
+                    {/* </div> */}
                     <a
                       href={item.websiteURL}
                       target="_blank"
