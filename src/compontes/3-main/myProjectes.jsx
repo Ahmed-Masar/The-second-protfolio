@@ -116,4 +116,12 @@ export const myProjectes = [
     websiteURL: "https://classy-choux-3d3431.netlify.app/",
     githubURL: "https://github.com/Ahmed-Masar/Loen",
   },
+  {
+    projectTitle: "Ice Cream",
+    projectBody: "This Is A Website I Created Using React",
+    category: ["react"],
+    imgPath: "./images/Ice World.jpg",
+    websiteURL: "https://chic-chebakia-32430e.netlify.app/",
+    githubURL: "https://github.com/Ahmed-Masar/ice-world",
+  },
 ];
