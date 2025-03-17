@@ -28,11 +28,11 @@ main section.left-section button.active {
   padding: 0.8rem 0;
   border: 1px solid var(--blue);
 }
-.light main section.left-section button.active {
+.light main .left-section button.active {
   border: 1px solid #000;
 }
 /* right section */
-main section.right-section {
+main .right-section {
   flex-grow: 1;
   flex-wrap: wrap;
   column-gap: 16px;
@@ -94,6 +94,33 @@ main section.right-section {
   color: var(--blue);
   margin-right: 12px;
 }
+
+.right__ul {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.right__ul li {
+  padding: 0.5rem 1.2rem;
+  background-color: rgba(36, 37, 46, 1);
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.right__ul li:hover {
+  opacity: 1;
+}
+
+.right__ul li.active {
+  opacity: 1;
+  font-weight: bold;
+  border: 1px solid var(--blue);
+}
+
 @media (max-width: 600px) {
   main.flex {
     flex-direction: column;

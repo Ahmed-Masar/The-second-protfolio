@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./main.css";
 import { myProjectes } from "./myProjectes";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Main = () => {
   const [active, setActive] = useState("all");
+  const [numberOfList, setNumberOfList] = useState("");
   const [arr, setArr] = useState(myProjectes);
 
   const handleClick = (type) => {
@@ -12,12 +13,30 @@ const Main = () => {
 
     const newArr = myProjectes.filter((item) => {
       const zzz = item.category.find((myItem) => {
-        return myItem === type;
+        if (type === "all") {
+          handleFlterList("1");
+        } else {
+          return myItem === type;
+        }
       });
       return zzz;
     });
     setArr(newArr);
   };
+
+  function handleFlterList(number) {
+    setNumberOfList(number);
+
+    const newArr = myProjectes.filter((item) => {
+      const zzz = item.listNumber;
+      return zzz == number;
+    });
+    setArr(newArr);
+  }
+
+  useEffect(() => {
+    handleFlterList("1");
+  }, []);
 
   return (
     <main className="flex" id="projects">
@@ -25,7 +44,8 @@ const Main = () => {
         <button
           onClick={() => {
             setActive("all");
-            setArr(myProjectes);
+            handleClick("all");
+            handleFlterList("1");
           }}
           className={active == "all" ? "active" : ""}
         >
@@ -77,48 +97,81 @@ const Main = () => {
         </button>
       </section>
 
-      <section className="right-section flex">
-        <AnimatePresence>
-          {arr.map((item) => {
-            return (
-              <motion.article
-                key={item.imgPath}
-                layout
-                initial={{ transform: "scale(0)" }}
-                animate={{ transform: "scale(1)" }}
-                transition={{ type: "spring", damping: 5, stiffness: 50 }}
-                className="card"
-              >
-                <img width={266} src={item.imgPath} alt="none" />
-                <div style={{ width: "266px" }} className="box">
-                  <h1 className="title">{item.projectTitle}</h1>
-                  <p className="sub-title">{item.projectBody}</p>
-                  <div className="flex icons">
-                    {/* <div className=""> */}
-                    {/* <div className="icon-link" /> */}
-                    <a
-                      className="icon-github"
-                      target="_blank"
-                      href={item.githubURL}
-                    />
-                    {/* </div> */}
-                    <a
-                      href={item.websiteURL}
-                      target="_blank"
-                      className="link flex"
-                    >
-                      Go To Webesite{" "}
-                      <span
-                        style={{ alignSelf: "end" }}
-                        className="icon-arrow_forward"
+      <section className="all__of__right">
+        {active === "all" ? (
+          <ul className="right__ul">
+            <li
+              className={numberOfList === "1" ? "active" : ""}
+              onClick={() => {
+                handleFlterList("1");
+              }}
+            >
+              1
+            </li>
+            <li
+              className={numberOfList === "2" ? "active" : ""}
+              onClick={() => {
+                handleFlterList("2");
+              }}
+            >
+              2
+            </li>
+            <li
+              className={numberOfList === "3" ? "active" : ""}
+              onClick={() => {
+                handleFlterList("3");
+              }}
+            >
+              3
+            </li>
+          </ul>
+        ) : (
+          ""
+        )}
+
+        <div className="right-section flex">
+          <AnimatePresence>
+            {arr.map((item) => {
+              return (
+                <motion.article
+                  key={item.imgPath}
+                  layout
+                  initial={{ transform: "scale(0)" }}
+                  animate={{ transform: "scale(1)" }}
+                  transition={{ type: "spring", damping: 5, stiffness: 50 }}
+                  className="card"
+                >
+                  <img width={266} src={item.imgPath} alt="none" />
+                  <div style={{ width: "266px" }} className="box">
+                    <h1 className="title">{item.projectTitle}</h1>
+                    <p className="sub-title">{item.projectBody}</p>
+                    <div className="flex icons">
+                      {/* <div className=""> */}
+                      {/* <div className="icon-link" /> */}
+                      <a
+                        className="icon-github"
+                        target="_blank"
+                        href={item.githubURL}
                       />
-                    </a>
+                      {/* </div> */}
+                      <a
+                        href={item.websiteURL}
+                        target="_blank"
+                        className="link flex"
+                      >
+                        Go To Webesite{" "}
+                        <span
+                          style={{ alignSelf: "end" }}
+                          className="icon-arrow_forward"
+                        />
+                      </a>
+                    </div>
                   </div>
-                </div>
-              </motion.article>
-            );
-          })}
-        </AnimatePresence>
+                </motion.article>
+              );
+            })}
+          </AnimatePresence>
+        </div>
       </section>
     </main>
   );

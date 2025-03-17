@@ -51,6 +51,16 @@ section.hero .animation {
   translate: 60px 55px;
 }
 @media (max-width: 1200px) {
+  section.hero h1.title {
+    font-size: 1.85rem;
+    line-height: 2.5rem;
+    margin: 24px 0 18px;
+  }
+
+  section.hero p.sub-title {
+    line-height: 1.35rem;
+  }
+
   section.hero .animation {
     display: none;
   }
