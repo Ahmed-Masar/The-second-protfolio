@@ -3,7 +3,7 @@ export const myProjectes = [
     projectTitle: "Musikalis",
     projectBody: "This Is A Website I Created Using React",
     category: ["react", "all"],
-    imgPath: "../../../public/images/musilkalis.jpg",
+    imgPath: "./images/musilkalis.jpg",
     websiteURL: "https://musilkalis.netlify.app/",
     githubURL: "https://github.com/Ahmed-Masar/Musikalis",
     listNumber: "1",
