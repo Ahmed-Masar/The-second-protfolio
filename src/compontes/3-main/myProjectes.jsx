@@ -1,11 +1,12 @@
 export const myProjectes = [
   {
     projectTitle: "TravelToor",
-    projectBody: "This Is A Website I Created Using React",
+    projectBody:
+      "This is a website I created using React and Framer Motion for animations",
     category: ["react", "all"],
     imgPath: "./images/TravelToor.jpg",
-    websiteURL: "https://musilkalis.netlify.app/",
-    githubURL: "https://github.com/Ahmed-Masar/Musikalis",
+    websiteURL: "https://traveltoor1.netlify.app/",
+    githubURL: "https://github.com/Ahmed-Masar/TravelToor",
     listNumber: "1",
   },
   {
