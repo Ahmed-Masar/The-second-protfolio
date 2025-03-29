@@ -2,13 +2,25 @@ export const myProjectes = [
   {
     projectTitle: "TravelToor",
     projectBody:
-      "This is a website I created using React and Framer Motion for animations",
+      "This is a website I created using React, Framer Motion for animations, and Swiper for smooth and interactive sliders.",
     category: ["react", "all"],
     imgPath: "./images/TravelToor.jpg",
     websiteURL: "https://traveltoor1.netlify.app/",
     githubURL: "https://github.com/Ahmed-Masar/TravelToor",
     listNumber: "1",
   },
+
+  {
+    projectTitle: "Fitnesxia",
+    projectBody:
+      "This is a website I created using React and Framer Motion for animations",
+    category: ["react", "all"],
+    imgPath: "./images/Fitnesxia.jpg",
+    websiteURL: "https://fitnesxia3.netlify.app/",
+    githubURL: "https://github.com/Ahmed-Masar/Fitnesxia",
+    listNumber: "1",
+  },
+
   {
     projectTitle: "Musikalis",
     projectBody: "This Is A Website I Created Using React",
@@ -38,16 +50,6 @@ export const myProjectes = [
   },
 
   {
-    projectTitle: "FurniShop",
-    projectBody: "This Is A Website I Created Using HTML&CSS&JAVA",
-    category: ["java", "all"],
-    imgPath: "./images/furniShop.jpg",
-    websiteURL: "https://bejewelled-biscuit-0430af.netlify.app/",
-    githubURL: "https://github.com/Ahmed-Masar/Furni-Shop",
-    listNumber: "1",
-  },
-
-  {
     projectTitle: "Fashion",
     projectBody: "This Is A Website I Created Using HTML&CSS&JAVA",
     category: ["java", "all"],
@@ -55,6 +57,16 @@ export const myProjectes = [
     websiteURL: "https://illustrious-paletas-0f5fe3.netlify.app/",
     githubURL: "https://github.com/Ahmed-Masar/Fashion",
     listNumber: "1",
+  },
+
+  {
+    projectTitle: "FurniShop",
+    projectBody: "This Is A Website I Created Using HTML&CSS&JAVA",
+    category: ["java", "all"],
+    imgPath: "./images/furniShop.jpg",
+    websiteURL: "https://bejewelled-biscuit-0430af.netlify.app/",
+    githubURL: "https://github.com/Ahmed-Masar/Furni-Shop",
+    listNumber: "2",
   },
   {
     projectTitle: "Next Protfolio",
@@ -113,7 +125,7 @@ export const myProjectes = [
     imgPath: "./images/raido.jpg",
     websiteURL: "https://adorable-sundae-e05a71.netlify.app/",
     githubURL: "https://github.com/Ahmed-Masar/Raido",
-    listNumber: "2",
+    listNumber: "3",
   },
 
   {
