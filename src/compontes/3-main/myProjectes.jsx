@@ -1,5 +1,15 @@
 export const myProjectes = [
   {
+    projectTitle: "Photography",
+    projectBody:
+      "This is a website I created using React, Framer Motion for animations, and Swiper for smooth and interactive sliders.",
+    category: ["react", "all"],
+    imgPath: "./images/Photography.jpg",
+    websiteURL: "https://chic-crumble-a55462.netlify.app/",
+    githubURL: "https://github.com/Ahmed-Masar/Photography.git",
+    listNumber: "1",
+  },
+  {
     projectTitle: "TravelToor",
     projectBody:
       "This is a website I created using React, Framer Motion for animations, and Swiper for smooth and interactive sliders.",
@@ -56,7 +66,7 @@ export const myProjectes = [
     imgPath: "./images/fashion.jpg",
     websiteURL: "https://illustrious-paletas-0f5fe3.netlify.app/",
     githubURL: "https://github.com/Ahmed-Masar/Fashion",
-    listNumber: "1",
+    listNumber: "2",
   },
 
   {
@@ -175,6 +185,6 @@ export const myProjectes = [
     imgPath: "./images/leon.jpg",
     websiteURL: "https://classy-choux-3d3431.netlify.app/",
     githubURL: "https://github.com/Ahmed-Masar/Loen",
-    listNumber: "3",
+    listNumber: "4",
   },
 ];

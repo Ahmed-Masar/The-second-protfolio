@@ -124,6 +124,14 @@ const Main = () => {
             >
               3
             </li>
+            <li
+              className={numberOfList === "4" ? "active" : ""}
+              onClick={() => {
+                handleFlterList("4");
+              }}
+            >
+              4
+            </li>
           </ul>
         ) : (
           ""

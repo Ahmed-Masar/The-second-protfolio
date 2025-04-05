@@ -95,6 +95,10 @@ main .right-section {
   margin-right: 12px;
 }
 
+.all__of__right {
+  width: 100%;
+}
+
 .right__ul {
   margin-bottom: 2rem;
   display: flex;
